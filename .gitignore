@@ -1,0 +1,398 @@
+# ====================== 通用系统忽略 ======================
+# Windows
+Thumbs.db
+Desktop.ini
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+# Linux
+*~
+
+# ===================== 日志、临时文件 =====================
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*.sw?
+
+# ====================== VSCode 专用缓存 ======================
+# .vscode/
+# 注意：如果你不要保存tasks.json/launch.json到仓库，打开上面一行注释，同时注释或删除下面这三行
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/c_cpp_properties.json
+.vscode/.env
+.vscode/extensions.json
+.vscode/settings.jsonc
+.vscode/**/.git
+.vscode/.cache
+.vscode/ipch
+.vscode/.suo
+.vscode/*.log
+*.code-workspace
+.env
+# 临时缓存
+.vs/
+*.log
+*.log.*
+
+# 构建输出目录
+build/
+bin/
+obj/
+dist/
+
+# 本地用户配置
+*.csproj.user
+
+# ====================== Visual Studio ====================================
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.tlog
+# 编译产物
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+ARM/
+# 项目缓存
+*.vcxproj.user
+*.csproj.user
+# 自定义输出文件夹
+bin/
+obj/
+
+# NuGet
+packages/
+*.nupkg
+
+# IDE 配置
+.idea/
+*.ntvs*
+*.njsproj
+*.sln
+
+# ====================== CLion / JetBrains IDE 缓存 ================
+cmake-build-*/
+cmake-build-release/
+cmake-build-debug/
+cmake-build-relwithdebinfo/
+cmake-build-minsizerel/
+# 保留 .idea 里的运行配置（可选，需要就注释上面一行，放开下面三行）
+.idea/
+#!.idea/runConfigurations/
+#!.idea/modules.xml
+#!.idea/misc.xml
+*.iml
+*.iws
+*.ipr
+
+# ========== CMake 自动生成文件 ==========
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# ========== 可选：如果项目使用vcpkg，取消下面 ==========
+# vcpkg/
+# vcpkg_installed/
+
+
+# ====================== Dev-C++ / MinGW 工程文件和临时文件===============
+*.dev
+makefile.win
+*.bak
+*.layout
+*.depend
+
+#====================== Eclipse ===================================
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+#====================== NetBeans ======================
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ======================IntelliJ IDEA 配置文件 ======================
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+.kotlin
+build/
+.apt_generated
+# 自定义本地配置（本地环境配置，不要提交到仓库）
+application-local.yml
+application-local.yaml
+application-local.properties
+
+# ====================== ASM / C / C++ 汇编、C、C++ ======================
+# 编译产物
+*.o
+*.obj
+*.exe
+*.out
+*.dll
+*.so
+*.a
+*.lib
+*.elf
+*.hex
+*.bin
+*.com
+*.dylib
+*.log
+*.exp
+
+# 编译中间文件
+*.i
+*.s
+# 强制追踪src目录下所有文件（放在*.s后面，针对GAS项目）
+!src/*.s
+
+# MASM 专属文件
+*.lst
+*.sbr
+*.ilk
+*.res
+# 调试文件
+*.pdb
+*.map
+
+# NASM 可选生成
+*.dbg
+*.dis
+
+# 临时生成文件
+*.stackdump
+*.gcno
+*.gcda
+
+# ====================== C# / dotnet 项目======================
+# 编译输出
+[Dd]ebug/
+[Rr]elease/
+bin/
+obj/
+.vs/
+packages/
+*.user
+*.suo
+*.cache
+*.nupkg
+.idea/
+*.log
+*.csproj.user
+
+# ====================== Python ======================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+.env
+dist/
+build/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+*.log
+
+# ====================== Java ======================
+# 编译输出
+*.class
+
+# 包文件
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+
+# Maven编译产物
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle（如果用gradle项目，保留，不用可删掉）
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+HELP.md
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# SpringBoot 运行临时文件
+spring-boot-starter.log
+
+# 单元测试生成文件
+test-output/
+
+# 覆盖测试报告
+site/
+
+# ====================== JavaScript / NodeJS ======================
+# 依赖包（npm临时文件，如果少量使用npm管理前端依赖）
+node_modules/
+.pnp/
+.pnp.js
+
+# 打包构建产物
+dist/
+build/
+out/
+output/
+*.tsbuildinfo
+
+# 本地环境、密钥文件（重要！）
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+# 日志
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 测试覆盖率
+coverage/
+
+# ===================== 数据库相关文件 ==========================
+# SQL Server 数据库文件
+*.mdf
+*.ldf
+*.ndf
+*.sdf
+# 备份与日志
+*.bak
+*.trn
+*.sqlbak
+
+# MySQL 数据文件
+*.ibd
+*.frm
+*.myi
+*.myd
+*.ib_logfile*
+# 数据库备份、导出文件
+*.sql.bak
+*.dump
+*.backup
+# 工具临时文件
+*.rpt
+*.log
+*.tmp
+
+# PostgreSQL 备份导出文件
+*.dump
+*.sql.backup
+*.backup
+# psql / pgAdmin 临时文件
+*.rpt
+*.log
+*.tmp
+
+# Redis持久化文件
+dump.rdb
+appendonly.aof
+*.rdb
+*.aof
+# Redis临时日志
+redis.log
+*.log
+# 本地环境私有配置（带真实密码的本地配置）
+redis.local.conf
+
+# SQLite 数据库文件
+*.db
+*.db3
+*.sqlite
+*.sqlite3
+*.sdb
+*.db-wal
+*.db-shm
+# 数据库备份、导出文件
+*.dump
+*.sql.bak
+*.backup
+# 工具临时文件
+*.rpt
+*.log
+*.tmp
+
+# MongoDB 备份导出文件
+*.bson
+*.metadata.json
+mongodump/
+mongorestore/
+# mongosh / Compass 临时文件
+*.log
+*.tmp
+
+# SSMS / 数据库工具临时文件
+*.rpt
+*.log
+*.tmp
+*.sqlproj.user
+bin/
+obj/
